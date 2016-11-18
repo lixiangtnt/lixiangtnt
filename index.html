@@ -139,6 +139,113 @@
       <div class="body-wrap">
         
   
+    <article id="post-config_yml_configuration" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/19/config_yml_configuration/">config_yml configuration</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="timezone"><a href="#timezone" class="headerlink" title="timezone"></a>timezone</h3><p>Name can be refered to <a href="http://momentjs.com/timezone/" target="_blank" rel="external">Moment Timezone </a></p>
+<h3 id="repository"><a href="#repository" class="headerlink" title="repository"></a>repository</h3><p>Repo: <a href="https://github.com/lixiangtnt/lixiangtnt.github.io.git" target="_blank" rel="external">https://github.com/lixiangtnt/lixiangtnt.github.io.git</a></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/19/config_yml_configuration/" class="archive-article-date">
+  	<time datetime="2016-11-18T16:41:33.678Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Hexo_Github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/18/Hexo_Github/">Hexo + Github for static website</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! </p>
+<h2 id="Preparation-for-environment"><a href="#Preparation-for-environment" class="headerlink" title="Preparation for environment"></a>Preparation for environment</h2><p>安装 <a href="https://nodejs.org/download/" target="_blank" rel="external">Node.Js</a></p>
+<p>说明：As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following “hello world” example, many connections can be handled concurrently. Upon each connection the callback is fired, but if there is no work to be done Node is sleeping</p>
+<p>安装 <a href="http://git-scm.com/download/" target="_blank" rel="external">Git</a></p>
+<p>说明：Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+<p>验证安装<br>in the environment of <em>gitbash</em> with admisitritive<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ node -v</div><div class="line">$ npm -v</div></pre></td></tr></table></figure></p>
+<h2 id="Installing-hexo"><a href="#Installing-hexo" class="headerlink" title="Installing hexo"></a>Installing hexo</h2><p>Please note that all commands are to be executed within the Git Bash.<br>Create a new directory that will hold your blog<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ mkdir myblog</div><div class="line">$ <span class="built_in">cd</span> myblog</div></pre></td></tr></table></figure></p>
+<p>Install the hexo framework and the git deployer</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div><div class="line">$ npm install hexo-deployer-git --save</div><div class="line">$ hexo -v</div></pre></td></tr></table></figure>
+<p>Initialize your blog</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div><div class="line">$ npm install</div><div class="line">$ hexo serve</div></pre></td></tr></table></figure>
+<p>Now browse to <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> and enjoy your first blog</p>
+<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><h5 id="What-is-GitHub-Pages"><a href="#What-is-GitHub-Pages" class="headerlink" title="What is GitHub Pages?"></a>What is GitHub Pages?</h5><p>GitHub Pages is a static site hosting service.</p>
+<p>GitHub Pages is designed to host your personal, organization, or project pages directly from a GitHub repository. To learn more about the different types of GitHub Pages sites, see “User, organization, and project pages.”</p>
+<p>You can create and publish GitHub Pages online using the Automatic Page Generator. If you prefer to work locally, you can use GitHub Desktop or the command line.</p>
+<p>Repo: <a href="https://github.com/lixiangtnt/lixiangtnt.github.io.git" target="_blank" rel="external">https://github.com/lixiangtnt/lixiangtnt.github.io.git</a></p>
+<p>Set file _config.yml in :C:\Users\Xiang Li\myblog_config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/lixiangtnt/lixiangtnt.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/18/Hexo_Github/" class="archive-article-date">
+  	<time datetime="2016-11-18T15:59:38.550Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-secondblog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -186,59 +293,6 @@
 
 
   
-    <article id="post-hello-world1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/18/hello-world1/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/18/hello-world1/" class="archive-article-date">
-  	<time datetime="2016-11-18T14:58:04.568Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
-</a>
-      
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
     <article id="post-firstblog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -249,7 +303,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/18/firstblog/">firstblog</a>
+      <a class="article-title" href="/2016/11/18/firstblog/">First blog</a>
     </h1>
   
 

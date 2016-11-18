@@ -6,14 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2016/11 | Fun with Xiang Li</title>
+  <title>Hexo + Github for static website | Fun with Xiang Li</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Fun with Xiang Li">
-<meta property="og:url" content="http://yoursite.com/archives/2016/11/index.html">
+  <meta name="description" content="Welcome to Hexo! 
+Preparation for environment安装 Node.Js
+说明：As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following “hello world” e">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo + Github for static website">
+<meta property="og:url" content="http://yoursite.com/2016/11/18/Hexo_Github/index.html">
 <meta property="og:site_name" content="Fun with Xiang Li">
+<meta property="og:description" content="Welcome to Hexo! 
+Preparation for environment安装 Node.Js
+说明：As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following “hello world” e">
+<meta property="og:updated_time" content="2016-11-18T16:34:42.958Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fun with Xiang Li">
+<meta name="twitter:title" content="Hexo + Github for static website">
+<meta name="twitter:description" content="Welcome to Hexo! 
+Preparation for environment安装 Node.Js
+说明：As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following “hello world” e">
   
     <link rel="alternative" href="/atom.xml" title="Fun with Xiang Li" type="application/atom+xml">
   
@@ -137,157 +147,104 @@
 </nav>
 
       <div class="body-wrap">
+        <article id="post-Hexo_Github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/19/config_yml_configuration/" class="archive-article-date">
-  	<time datetime="2016-11-18T16:41:33.678Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/19/config_yml_configuration/">config_yml configuration</a>
+    <h1 class="article-title" itemprop="name">
+      Hexo + Github for static website
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! </p>
+<h2 id="Preparation-for-environment"><a href="#Preparation-for-environment" class="headerlink" title="Preparation for environment"></a>Preparation for environment</h2><p>安装 <a href="https://nodejs.org/download/" target="_blank" rel="external">Node.Js</a></p>
+<p>说明：As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following “hello world” example, many connections can be handled concurrently. Upon each connection the callback is fired, but if there is no work to be done Node is sleeping</p>
+<p>安装 <a href="http://git-scm.com/download/" target="_blank" rel="external">Git</a></p>
+<p>说明：Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+<p>验证安装<br>in the environment of <em>gitbash</em> with admisitritive<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ node -v</div><div class="line">$ npm -v</div></pre></td></tr></table></figure></p>
+<h2 id="Installing-hexo"><a href="#Installing-hexo" class="headerlink" title="Installing hexo"></a>Installing hexo</h2><p>Please note that all commands are to be executed within the Git Bash.<br>Create a new directory that will hold your blog<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ mkdir myblog</div><div class="line">$ <span class="built_in">cd</span> myblog</div></pre></td></tr></table></figure></p>
+<p>Install the hexo framework and the git deployer</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div><div class="line">$ npm install hexo-deployer-git --save</div><div class="line">$ hexo -v</div></pre></td></tr></table></figure>
+<p>Initialize your blog</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div><div class="line">$ npm install</div><div class="line">$ hexo serve</div></pre></td></tr></table></figure>
+<p>Now browse to <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> and enjoy your first blog</p>
+<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><h5 id="What-is-GitHub-Pages"><a href="#What-is-GitHub-Pages" class="headerlink" title="What is GitHub Pages?"></a>What is GitHub Pages?</h5><p>GitHub Pages is a static site hosting service.</p>
+<p>GitHub Pages is designed to host your personal, organization, or project pages directly from a GitHub repository. To learn more about the different types of GitHub Pages sites, see “User, organization, and project pages.”</p>
+<p>You can create and publish GitHub Pages online using the Automatic Page Generator. If you prefer to work locally, you can use GitHub Desktop or the command line.</p>
+<p>Repo: <a href="https://github.com/lixiangtnt/lixiangtnt.github.io.git" target="_blank" rel="external">https://github.com/lixiangtnt/lixiangtnt.github.io.git</a></p>
+<p>Set file _config.yml in :C:\Users\Xiang Li\myblog_config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/lixiangtnt/lixiangtnt.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/18/Hexo_Github/" class="archive-article-date">
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/18/Hexo_Github/" class="archive-article-date">
   	<time datetime="2016-11-18T15:59:38.550Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/18/Hexo_Github/">Hexo + Github for static website</a>
-    </h1>
-  
+      
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/18/secondblog/" class="archive-article-date">
-  	<time datetime="2016-11-18T15:02:28.839Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/18/secondblog/">secondblog</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
+  
+<nav id="article-nav">
+  
+    <a href="/2016/11/19/config_yml_configuration/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          config_yml configuration
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/18/secondblog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">secondblog</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/18/firstblog/" class="archive-article-date">
-  	<time datetime="2016-11-18T14:15:14.528Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/18/firstblog/">First blog</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/18/hello-world/" class="archive-article-date">
-  	<time datetime="2016-11-18T09:41:18.836Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/18/hello-world/">Hello World</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+
+
 
 
       </div>
@@ -310,8 +267,8 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
