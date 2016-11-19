@@ -135,6 +135,57 @@
       <div class="body-wrap">
         
   
+    <article id="post-customdomain" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/19/customdomain/">Custom Domain</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="custom-domain-setting-in-git-bash"><a href="#custom-domain-setting-in-git-bash" class="headerlink" title="custom domain setting in git bash"></a>custom domain setting in git bash</h3><h4 id="Add-your-domain-into-hexo"><a href="#Add-your-domain-into-hexo" class="headerlink" title="Add your domain into hexo"></a>Add your domain into hexo</h4><p>Modify the url in _config.yml to look like the following. Replace mydomain.com with your own domain and remember to save the file. <a href="http://readorskip.com/2015/06/08/Using-own-domain-with-github-and-hexo/" target="_blank" rel="external">[ref]</a></p>
+<h5 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h5><p>url: <a href="http://mydomain.com" target="_blank" rel="external">http://mydomain.com</a><br>root: / </p>
+<h5 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h5><p>Configure git deployment by adding following into _config.yml and saving the file. Replace username with your github username.</p>
+<h2 id="Docs-http-hexo-io-docs-deployment-html"><a href="#Docs-http-hexo-io-docs-deployment-html" class="headerlink" title="Docs: http://hexo.io/docs/deployment.html"></a>Docs: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">http://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: git@github.com:lixiangtnt/lixiangtnt.github.io.git                   (Please replace lixiangtnt with your own domain page)<br>  branch: master </p>
+<h5 id="Creating-CNAME-in-file"><a href="#Creating-CNAME-in-file" class="headerlink" title="Creating CNAME in file"></a>Creating CNAME in file</h5><p>Github uses file called CNAME to redirect your site. If you read the official guide it says the file must saved under the root directory in the master branch. But remember that for us the source branch is where the raw material is and master branch is generated when you deploy. So if you put something in the master branch it will be overwritten next time you deploy your site.</p>
+<p>Create file called CNAME (all caps, no extension) under the source directory in the source branch and write your domain name into that file. Replace mydomain.com with your own domain.</p>
+<p>$ cd source/<br>$ echo mydomain.com &gt; CNAME</p>
+<h3 id="Custom-domain-setting-in-godaddy-and-dnspod"><a href="#Custom-domain-setting-in-godaddy-and-dnspod" class="headerlink" title="Custom domain setting in godaddy and dnspod"></a>Custom domain setting in godaddy and dnspod</h3>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/19/customdomain/" class="archive-article-date">
+  	<time datetime="2016-11-19T05:43:03.612Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-excellentsites" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -404,6 +455,7 @@
       
         <h3 id="timezone"><a href="#timezone" class="headerlink" title="timezone"></a>timezone</h3><p>Name can be refered to <a href="http://momentjs.com/timezone/" target="_blank" rel="external">Moment Timezone </a></p>
 <h3 id="repository"><a href="#repository" class="headerlink" title="repository"></a>repository</h3><p>Repo: <a href="https://github.com/lixiangtnt/lixiangtnt.github.io.git" target="_blank" rel="external">https://github.com/lixiangtnt/lixiangtnt.github.io.git</a></p>
+<h3 id="URL-my-own-domain-purchased-from-godaddy"><a href="#URL-my-own-domain-purchased-from-godaddy" class="headerlink" title="URL #my own domain purchased from godaddy"></a>URL #my own domain purchased from godaddy</h3><p>URL: <a href="http://blog.drxli.com">http://blog.drxli.com</a></p>
 
       
     </div>
@@ -464,53 +516,6 @@
       
       <a href="/2016/11/18/Hexo_Github/" class="archive-article-date">
   	<time datetime="2016-11-18T15:59:38.550Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
-</a>
-      
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-secondblog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/18/secondblog/">secondblog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="First-Artical-writed-by-MarkDown"><a href="#First-Artical-writed-by-MarkDown" class="headerlink" title="First Artical writed by MarkDown."></a>First Artical writed by MarkDown.</h1><p><em>A new way of work</em></p>
-<p>MarkDown is a very efficient writing language that we can simply write my articles in here regardless of the fort and size adjustment in word.<br>I would  like to link a few links of markdown sources:<br><a href="http://www.markdowntutorial.com/lesson/4/" target="_blank" rel="external">Markdown tutorial website</a> I have proceed to the fourth lesson. </p>
-<p><a href="http://www.jianshu.com/p/cdb42773fffe" target="_blank" rel="external">Notepad++ markdown</a></p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/18/secondblog/" class="archive-article-date">
-  	<time datetime="2016-11-18T15:02:28.839Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
 </a>
       
       
