@@ -6,24 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.drxli.com">
-  <title>Hexo + Github for static website | Fun with Xiang Li</title>
+  <title>Fun with Xiang Li</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! 
-Preparation for environment安装 Node.Js
-说明：As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following “hello world” e">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo + Github for static website">
-<meta property="og:url" content="http://blog.drxli.com/2016/11/18/Hexo_Github/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Fun with Xiang Li">
+<meta property="og:url" content="http://blog.drxli.com/page/3/index.html">
 <meta property="og:site_name" content="Fun with Xiang Li">
-<meta property="og:description" content="Welcome to Hexo! 
-Preparation for environment安装 Node.Js
-说明：As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following “hello world” e">
-<meta property="og:updated_time" content="2016-11-19T10:00:38.855Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo + Github for static website">
-<meta name="twitter:description" content="Welcome to Hexo! 
-Preparation for environment安装 Node.Js
-说明：As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following “hello world” e">
+<meta name="twitter:title" content="Fun with Xiang Li">
   
     <link rel="alternative" href="/atom.xml" title="Fun with Xiang Li" type="application/atom+xml">
   
@@ -143,7 +133,9 @@ Preparation for environment安装 Node.Js
 </nav>
 
       <div class="body-wrap">
-        <article id="post-Hexo_Github" class="article article-type-post" itemscope itemprop="blogPost">
+        
+  
+    <article id="post-firstblog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -152,8 +144,8 @@ Preparation for environment安装 Node.Js
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      Hexo + Github for static website
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/18/firstblog/">First blog</a>
     </h1>
   
 
@@ -161,39 +153,18 @@ Preparation for environment安装 Node.Js
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! </p>
-<h2 id="Preparation-for-environment"><a href="#Preparation-for-environment" class="headerlink" title="Preparation for environment"></a>Preparation for environment</h2><p>安装 <a href="https://nodejs.org/download/" target="_blank" rel="external">Node.Js</a></p>
-<p>说明：As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following “hello world” example, many connections can be handled concurrently. Upon each connection the callback is fired, but if there is no work to be done Node is sleeping</p>
-<p>安装 <a href="http://git-scm.com/download/" target="_blank" rel="external">Git</a></p>
-<p>说明：Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
-<p>验证安装<br>in the environment of <em>gitbash</em> with admisitritive<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ node -v</div><div class="line">$ npm -v</div></pre></td></tr></table></figure></p>
-<p><a href="http://www.bravo-kernel.com/2015/10/setting-up-hexo-on-windows/" target="_blank" rel="external"><em>Set Up Ref 1</em></a><br><a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external"><em>Set Up Ref 2</em></a><br><a href="http://www.mway.top/2016/10/17/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4/" target="_blank" rel="external"><em>Set Up Ref 3</em></a><br><a href="http://www.jianshu.com/p/c23902f93558" target="_blank" rel="external"><em>Set Up Ref 4</em></a></p>
-<a id="more"></a>
-<h2 id="Installing-hexo"><a href="#Installing-hexo" class="headerlink" title="Installing hexo"></a>Installing hexo</h2><p>Please note that all commands are to be executed within the Git Bash.<br>Create a new directory that will hold your blog<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ mkdir myblog</div><div class="line">$ <span class="built_in">cd</span> myblog</div></pre></td></tr></table></figure></p>
-<p>Install the hexo framework and the git deployer</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div><div class="line">$ npm install hexo-deployer-git --save</div><div class="line">$ hexo -v</div></pre></td></tr></table></figure>
-<p>Initialize your blog</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div><div class="line">$ npm install</div><div class="line">$ hexo serve</div></pre></td></tr></table></figure>
-<p>Now browse to <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> and enjoy your first blog</p>
-<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><h5 id="What-is-GitHub-Pages"><a href="#What-is-GitHub-Pages" class="headerlink" title="What is GitHub Pages?"></a>What is GitHub Pages?</h5><p>GitHub Pages is a static site hosting service.</p>
-<p>GitHub Pages is designed to host your personal, organization, or project pages directly from a GitHub repository. To learn more about the different types of GitHub Pages sites, see “User, organization, and project pages.”</p>
-<p>You can create and publish GitHub Pages online using the Automatic Page Generator. If you prefer to work locally, you can use GitHub Desktop or the command line.</p>
-<p>Repo: <a href="https://github.com/lixiangtnt/lixiangtnt.github.io.git" target="_blank" rel="external">https://github.com/lixiangtnt/lixiangtnt.github.io.git</a></p>
-<p>Set file _config.yml in :<a href="file:///C:/Users/Xiang%20Li/myblog/" target="_blank" rel="external">C:\Users\Xiang Li\myblog\_config.yml</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/lixiangtnt/lixiangtnt.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+        <h1 id="First-Artical-writed-by-MarkDown"><a href="#First-Artical-writed-by-MarkDown" class="headerlink" title="First Artical writed by MarkDown."></a>First Artical writed by MarkDown.</h1><p><em>A new way of work</em></p>
+<p>MarkDown is a very efficient writing language that we can simply write my articles in here regardless of the fort and size adjustment in word.<br>I would  like to link a few links of markdown sources:<br><a href="http://www.markdowntutorial.com/lesson/4/" target="_blank" rel="external">Markdown tutorial website</a> I have proceed to the fourth lesson. </p>
+<p><a href="http://www.jianshu.com/p/cdb42773fffe" target="_blank" rel="external">Notepad++ markdown</a></p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/11/18/Hexo_Github/" class="archive-article-date">
-  	<time datetime="2016-11-18T15:59:38.550Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
+      <a href="/2016/11/18/firstblog/" class="archive-article-date">
+  	<time datetime="2016-11-18T14:15:14.528Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
 </a>
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BuildingBlog/">BuildingBlog</a></li></ul>
-	</div>
-
       
 
       <div class="clearfix"></div>
@@ -201,73 +172,74 @@ Preparation for environment安装 Node.Js
   </div>
 </article>
 
+
+
+
+
+
+
+
+
+
   
-<nav id="article-nav">
-  
-    <a href="/2016/11/19/config_yml_configuration/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-          config_yml configuration
-        
-      </div>
-    </a>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/18/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/18/hello-world/" class="archive-article-date">
+  	<time datetime="2016-11-18T09:41:18.836Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
   
   
-    <a href="/2016/11/18/secondblog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">secondblog</div>
-      <i class="icon-circle-right"></i>
-    </a>
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
   
-</nav>
-
-
-
-
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">Share to: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-	    <a class="jiathis_button_twitter"></a>
-	    <a class="jiathis_button_plus"></a> 
-	    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
-
-
-
-
-
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Hexo_Github" data-title="Hexo + Github for static website" data-url="http://blog.drxli.com/2016/11/18/Hexo_Github/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"lixiangtnt"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
-
 
 
       </div>
@@ -289,8 +261,8 @@ Preparation for environment安装 Node.Js
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
