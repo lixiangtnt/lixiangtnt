@@ -71,6 +71,58 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-landscape-css" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/24/landscape-css/" class="article-date">
+  <time datetime="2016-11-24T12:40:07.424Z" itemprop="datePublished">2016-11-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/24/landscape-css/">landscape css</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">.article-entry .highlight &#123;</div><div class="line">  background: #2d2d2d;</div><div class="line">  margin: 0 -20px; // 与两边间距</div><div class="line">  padding: 8px 20px;   // 字行距，首字母间距</div><div class="line">  border-style: solid;</div><div class="line">  border-color: #ddd;</div><div class="line">  border-width: 1px 0;</div><div class="line">  overflow: auto;</div><div class="line">  color: #ccc;</div><div class="line">  line-height: 22.400000000000002px;</div><div class="line">  border-radius: 8px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">$code-block</div><div class="line">  background: highlight-background</div><div class="line">  margin: 0 article-padding * -0.5</div><div class="line">  padding: 8px article-padding   //10px original</div><div class="line">  border-style: solid</div><div class="line">  border-color: color-border</div><div class="line">  border-width: 1px 0</div><div class="line">  overflow: auto</div><div class="line">  color: highlight-foreground</div><div class="line">  line-height: font-size * line-height</div><div class="line">  border-radius: 8px</div></pre></td></tr></table></figure>
+<h2 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#header-title &#123;</div><div class="line">  text-align: center;</div><div class="line">  height: 40px;</div><div class="line">  position: absolute;</div><div class="line">  top: 50%;</div><div class="line">  left: -200px;  // header title left</div><div class="line">  margin-top: -20px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Highlight-theme"><a href="#Highlight-theme" class="headerlink" title="Highlight theme"></a>Highlight theme</h2><p><a href="https://github.com/chriskempson/tomorrow-theme" target="_blank" rel="external">https://github.com/chriskempson/tomorrow-theme</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">highlight-background = #A9999C</div><div class="line">highlight-current-line = #282a2e</div><div class="line">highlight-selection = #373b41</div><div class="line">highlight-foreground = #c5c8c6</div><div class="line">highlight-comment = #969896</div><div class="line">highlight-red = #cc6666</div><div class="line">highlight-orange = #de935f</div><div class="line">highlight-yellow = #f0c674</div><div class="line">highlight-green = #b5bd68</div><div class="line">highlight-aqua = #8abeb7</div><div class="line">highlight-blue = #81a2be</div><div class="line">highlight-purple = #b294bb</div></pre></td></tr></table></figure>
+<p>(Can be assisted with color picker tool FCcapture84)</p>
+<h2 id="Adding-links-on-top-navbar"><a href="#Adding-links-on-top-navbar" class="headerlink" title="Adding links on top navbar"></a>Adding links on top navbar</h2><p>Links: <a href="http://jr0cket.co.uk/hexo/hexo-theme-simple-changes.html" target="_blank" rel="external">http://jr0cket.co.uk/hexo/hexo-theme-simple-changes.html</a></p>
+<h2 id="定制Hexo的landscape打造自己的主题"><a href="#定制Hexo的landscape打造自己的主题" class="headerlink" title="定制Hexo的landscape打造自己的主题"></a>定制Hexo的landscape打造自己的主题</h2><p>links: <a href="http://www.jianshu.com/p/b96fd206571a" target="_blank" rel="external">http://www.jianshu.com/p/b96fd206571a</a></p>
+<h2 id="nav-icon"><a href="#nav-icon" class="headerlink" title=".nav-icon"></a>.nav-icon</h2><p>File name:\myblog\themes\landscape\source\css_partial\header.styl<br><img src=".\img\landscape_icon.png" alt=""></p>
+<h2 id="Font-size"><a href="#Font-size" class="headerlink" title="Font-size"></a>Font-size</h2><p>Adding a new of font size<br><img src=".\img\landscape_nav_link.png" alt=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$nav-link</div><div class="line">  font-size:subtitle-size   // adding new line which is not showing in the original setting</div><div class="line">  float: left</div><div class="line">  color: #fff</div><div class="line">  opacity: 0.6</div><div class="line">  text-decoration: none</div><div class="line">  text-shadow: 0 1px rgba(0, 0, 0, 0.2)</div><div class="line">  transition: opacity 0.2s</div><div class="line">  display: block</div><div class="line">  padding: 20px 15px</div><div class="line">  &amp;:hover</div><div class="line">    opacity: 1</div></pre></td></tr></table></figure></p>
+<h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>Hexo theme updates</p>
+<p>There maybe updates from the original theme I want to incorporate with my new theme, so I also add the repository from the original hexo-theme-landscape to my local clone<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add original-theme https://github.com/hexojs/hexo-theme-landscape.git</div></pre></td></tr></table></figure></p>
+<p>Then if there are updates to the original theme, I can create a new branch in my local repository and pull the changes to the original landscape theme in using Git:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout -b original-theme-updates</div><div class="line">git pull original-theme master</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.drxli.com/2016/11/24/landscape-css/" data-id="civwq4vb80000wcuh7m9dz8fp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
     <article id="post-Github-operation" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/11/24/Github-operation/" class="article-date">
@@ -402,55 +454,6 @@
 
 
   
-    <article id="post-customdomain" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/19/customdomain/" class="article-date">
-  <time datetime="2016-11-19T05:43:03.612Z" itemprop="datePublished">2016-11-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/19/customdomain/">Custom Domain</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="custom-domain-setting-in-git-bash"><a href="#custom-domain-setting-in-git-bash" class="headerlink" title="custom domain setting in git bash"></a>custom domain setting in git bash</h3><h4 id="Add-your-domain-into-hexo"><a href="#Add-your-domain-into-hexo" class="headerlink" title="Add your domain into hexo"></a>Add your domain into hexo</h4><p>Modify the url in _config.yml to look like the following. Replace mydomain.com with your own domain and remember to save the file. <a href="http://readorskip.com/2015/06/08/Using-own-domain-with-github-and-hexo/" target="_blank" rel="external">[ref]</a></p>
-<h5 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h5><p>url: <a href="http://mydomain.com" target="_blank" rel="external">http://mydomain.com</a><br>root: / </p>
-<h5 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h5><p>Configure git deployment by adding following into _config.yml and saving the file. Replace username with your github username.<br><a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Docs</a><br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/lixiangtnt/lixiangtnt.github.io" target="_blank" rel="external">https://github.com/lixiangtnt/lixiangtnt.github.io</a>                   (Please replace lixiangtnt with your own domain page, Not form like git@github.com:jr0cket/jr0cket.github.io.git)<br>  branch: master </p>
-<h5 id="Creating-CNAME-in-file"><a href="#Creating-CNAME-in-file" class="headerlink" title="Creating CNAME in file"></a>Creating CNAME in file</h5><p>Github uses file called CNAME to redirect your site. If you read the official guide it says the file must saved under the root directory in the master branch. But remember that for us the source branch is where the raw material is and master branch is generated when you deploy. So if you put something in the master branch it will be overwritten next time you deploy your site.</p>
-<p>Create file called CNAME (all caps, no extension) under the source directory in the source branch and write your domain name into that file. Replace mydomain.com with your own domain.</p>
-<p>$ cd source/<br>$ echo mydomain.com &gt; CNAME</p>
-<h3 id="Custom-domain-setting-in-godaddy-and-dnspod"><a href="#Custom-domain-setting-in-godaddy-and-dnspod" class="headerlink" title="Custom domain setting in godaddy and dnspod"></a>Custom domain setting in godaddy and dnspod</h3><p><em>To be continuing</em></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.drxli.com/2016/11/19/customdomain/" data-id="civwpmpiw000md8uho8d5ijdt" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BuildingBlog/">BuildingBlog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -499,6 +502,10 @@
       <ul>
         
           <li>
+            <a href="/2016/11/24/landscape-css/">landscape css</a>
+          </li>
+        
+          <li>
             <a href="/2016/11/24/Github-operation/">Github operation</a>
           </li>
         
@@ -512,10 +519,6 @@
         
           <li>
             <a href="/2016/11/20/intelligentmanufacturing/">Intelligent Manufacturing</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/19/Writing Process/">Writing Process</a>
           </li>
         
       </ul>
