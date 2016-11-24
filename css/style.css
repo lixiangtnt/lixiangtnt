@@ -360,12 +360,12 @@ body {
   z-index: -1;
 }
 #header-title {
-  text-align: center;
+  text-align: left;
   height: 40px;
   position: absolute;
   top: 50%;
-  left: -200px;
-  margin-top: -20px;
+  left: 200px;
+  margin-top: -60px;
 }
 #logo,
 #subtitle {
@@ -380,12 +380,13 @@ body {
   letter-spacing: 2px;
 }
 #subtitle {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 20px;
+  line-height: 20px;
   letter-spacing: 1px;
+  font-weight: 300;
 }
 #subtitle-wrap {
-  margin-top: 16px;
+  margin-top: 20px;
 }
 #main-nav {
   float: left;
@@ -393,9 +394,10 @@ body {
 }
 .nav-icon,
 .main-nav-link {
+  font-size: 20px;
   float: left;
   color: #fff;
-  opacity: 0.6;
+  opacity: 0.8;
   text-decoration: none;
   text-shadow: 0 1px rgba(0,0,0,0.2);
   -webkit-transition: opacity 0.2s;
@@ -420,7 +422,7 @@ body {
   cursor: pointer;
 }
 .main-nav-link {
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 @media screen and (max-width: 479px) {
@@ -510,7 +512,7 @@ body {
   color: #777;
 }
 .article {
-  margin: 50px 0;
+  margin: 24px 0;
 }
 .article-inner {
   overflow: hidden;
@@ -755,7 +757,7 @@ a.article-title:hover {
 }
 @media screen and (min-width: 768px) {
   #article-nav {
-    margin: 50px 0;
+    margin: 24px 0;
   }
   #article-nav:before {
     width: 8px;
@@ -779,7 +781,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 24px;
   text-align: center;
   display: block;
 }
@@ -953,13 +955,13 @@ a.article-title:hover {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 3px;
-  margin: 50px 0;
+  margin: 24px 0;
 }
 #comments a {
   color: #258fb8;
 }
 .archives-wrap {
-  margin: 50px 0;
+  margin: 24px 0;
 }
 .archives:before,
 .archives:after {
@@ -1026,7 +1028,7 @@ a.article-title:hover {
   display: block;
 }
 #page-nav {
-  margin: 50px auto;
+  margin: 24px auto;
   background: #fff;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
@@ -1302,7 +1304,7 @@ pre .javascript .function {
   }
 }
 .widget-wrap {
-  margin: 50px 0;
+  margin: 24px 0;
 }
 .widget {
   color: #777;
