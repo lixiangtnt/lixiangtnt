@@ -49,7 +49,7 @@
         
           <a class="main-nav-link" href="/archives">Archives</a>
         
-          <a class="main-nav-link" href="/">Projects</a>
+          <a class="main-nav-link" href="/Projects">Projects</a>
         
           <a class="main-nav-link" href="/Publications">Publications</a>
         
@@ -217,6 +217,9 @@
 <h2 id="定制Hexo的landscape打造自己的主题"><a href="#定制Hexo的landscape打造自己的主题" class="headerlink" title="定制Hexo的landscape打造自己的主题"></a>定制Hexo的landscape打造自己的主题</h2><p>links: <a href="http://www.jianshu.com/p/b96fd206571a" target="_blank" rel="external">http://www.jianshu.com/p/b96fd206571a</a></p>
 <h2 id="nav-icon"><a href="#nav-icon" class="headerlink" title=".nav-icon"></a>.nav-icon</h2><p>File name:\myblog\themes\landscape\source\css_partial\header.styl<br><img src=".\img\landscape_icon.png" alt=""></p>
 <h2 id="Font-size"><a href="#Font-size" class="headerlink" title="Font-size"></a>Font-size</h2><p>Adding a new of font size<br><img src=".\img\landscape_nav_link.png" alt=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$nav-link</div><div class="line">  font-size:subtitle-size   // adding new line which is not showing in the original setting</div><div class="line">  float: left</div><div class="line">  color: #fff</div><div class="line">  opacity: 0.6</div><div class="line">  text-decoration: none</div><div class="line">  text-shadow: 0 1px rgba(0, 0, 0, 0.2)</div><div class="line">  transition: opacity 0.2s</div><div class="line">  display: block</div><div class="line">  padding: 20px 15px</div><div class="line">  &amp;:hover</div><div class="line">    opacity: 1</div></pre></td></tr></table></figure></p>
+<h2 id="Generate-more-pages-e-g-projects-projects-1"><a href="#Generate-more-pages-e-g-projects-projects-1" class="headerlink" title="Generate more pages (e.g. projects, projects/1)"></a>Generate more pages (e.g. projects, projects/1)</h2><p>Initial a new page<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page projects</div></pre></td></tr></table></figure></p>
+<p>Setting configuration in the ‘Theme configuration’ _config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  Home: /</div><div class="line">  Archives: /archives</div><div class="line">  Projects: /Projects</div></pre></td></tr></table></figure></p>
+<p>Linking the new page <code>1</code> in page <code>Projects</code><br>/projects/index. md : [Carbon fibre recycling](/Projects/carbon-fibre-recycling)</p>
 <h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>Hexo theme updates</p>
 <p>There maybe updates from the original theme I want to incorporate with my new theme, so I also add the repository from the original hexo-theme-landscape to my local clone<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add original-theme https://github.com/hexojs/hexo-theme-landscape.git</div></pre></td></tr></table></figure></p>
 <p>Then if there are updates to the original theme, I can create a new branch in my local repository and pull the changes to the original landscape theme in using Git:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout -b original-theme-updates</div><div class="line">git pull original-theme master</div></pre></td></tr></table></figure></p>
@@ -580,7 +583,7 @@
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
-    <a href="/" class="mobile-nav-link">Projects</a>
+    <a href="/Projects" class="mobile-nav-link">Projects</a>
   
     <a href="/Publications" class="mobile-nav-link">Publications</a>
   
