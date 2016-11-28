@@ -13,7 +13,7 @@
 <meta property="og:description" content="公式123456789101112131415161718192021222324.article-entry .highlight &amp;#123;  background: #2d2d2d;  margin: 0 -20px; // 与两边间距  padding: 8px 20px;   // 字行距，首字母间距  border-style: solid;  border-color: #ddd;">
 <meta property="og:image" content="http://blog.drxli.com/.\img\landscape_icon.png">
 <meta property="og:image" content="http://blog.drxli.com/.\img\landscape_nav_link.png">
-<meta property="og:updated_time" content="2016-11-25T09:02:53.242Z">
+<meta property="og:updated_time" content="2016-11-27T19:49:08.673Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="landscape css">
 <meta name="twitter:description" content="公式123456789101112131415161718192021222324.article-entry .highlight &amp;#123;  background: #2d2d2d;  margin: 0 -20px; // 与两边间距  padding: 8px 20px;   // 字行距，首字母间距  border-style: solid;  border-color: #ddd;">
@@ -110,6 +110,9 @@
 <h2 id="Generate-more-pages-e-g-projects-projects-1"><a href="#Generate-more-pages-e-g-projects-projects-1" class="headerlink" title="Generate more pages (e.g. projects, projects/1)"></a>Generate more pages (e.g. projects, projects/1)</h2><p>Initial a new page<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page projects</div></pre></td></tr></table></figure></p>
 <p>Setting configuration in the ‘Theme configuration’ _config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  Home: /</div><div class="line">  Archives: /archives</div><div class="line">  Projects: /Projects</div></pre></td></tr></table></figure></p>
 <p>Linking the new page <code>1</code> in page <code>Projects</code><br>/projects/index. md : [Carbon fibre recycling](/Projects/carbon-fibre-recycling)</p>
+<h2 id="fancybox"><a href="#fancybox" class="headerlink" title="fancybox"></a>fancybox</h2><h3 id="Fancybox-2-visible-navigation-arrows"><a href="#Fancybox-2-visible-navigation-arrows" class="headerlink" title="Fancybox 2 visible navigation arrows?"></a>Fancybox 2 visible navigation arrows?</h3><p>For fancybox v2.x you may use these CSS inline declarations (after you have linked to the jquery.fancybox.css file):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line"> .fancybox-next span &#123;</div><div class="line">  left: auto;</div><div class="line">  right: 20px;</div><div class="line"> &#125;</div><div class="line"> .fancybox-prev span &#123;</div><div class="line">  left: 20px;</div><div class="line"> &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
+<p>UPDATE (July 12, 2012) : Since Fancybox v2.0.6+ just need to add this css declaration instead</p>
+<p>.fancybox-nav span {<br> visibility: visible;<br>}<br><a href="http://stackoverflow.com/questions/8670956/fancybox-2-visible-navigation-arrows/8672001#8672001" target="_blank" rel="external">http://stackoverflow.com/questions/8670956/fancybox-2-visible-navigation-arrows/8672001#8672001</a></p>
 <h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>Hexo theme updates</p>
 <p>There maybe updates from the original theme I want to incorporate with my new theme, so I also add the repository from the original hexo-theme-landscape to my local clone<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add original-theme https://github.com/hexojs/hexo-theme-landscape.git</div></pre></td></tr></table></figure></p>
 <p>Then if there are updates to the original theme, I can create a new branch in my local repository and pull the changes to the original landscape theme in using Git:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout -b original-theme-updates</div><div class="line">git pull original-theme master</div></pre></td></tr></table></figure></p>
@@ -118,7 +121,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.drxli.com/2016/11/24/landscape-css/" data-id="ciw0xam6b000vbsuh1pbdbwid" class="article-share-link">Share</a>
+      <a data-url="http://blog.drxli.com/2016/11/24/landscape-css/" data-id="ciw12b6f8000zbguh67vhtl1e" class="article-share-link">Share</a>
       
       
     </footer>
