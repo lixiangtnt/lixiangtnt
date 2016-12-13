@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Database my literature | Fun with Xiang Li</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Aim: Building up a database reference System for LCA and optimization study
+Demand;
+
+refer the LCA figure from the right paper 
+refer the LCA figure with exact page of one paper
+refer the LCA figure f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Database my literature">
+<meta property="og:url" content="http://xiangli.co/Projects/database-my-literature/index.html">
+<meta property="og:site_name" content="Fun with Xiang Li">
+<meta property="og:description" content="Aim: Building up a database reference System for LCA and optimization study
+Demand;
+
+refer the LCA figure from the right paper 
+refer the LCA figure with exact page of one paper
+refer the LCA figure f">
+<meta property="og:updated_time" content="2016-12-13T10:14:41.508Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Database my literature">
+<meta name="twitter:description" content="Aim: Building up a database reference System for LCA and optimization study
+Demand;
+
+refer the LCA figure from the right paper 
+refer the LCA figure with exact page of one paper
+refer the LCA figure f">
+  
+    <link rel="alternate" href="/atom.xml" title="Fun with Xiang Li" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Fun with Xiang Li</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">大博的小博</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/Projects">Projects</a>
+        
+          <a class="main-nav-link" href="/Publications">Publications</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://xiangli.co"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/Projects/database-my-literature/index.html" class="article-date">
+  <time datetime="2016-12-13T10:14:41.508Z" itemprop="datePublished">2016-12-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Database my literature
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Aim: Building up a database reference System for LCA and optimization study</strong></p>
+<p>Demand;</p>
+<ul>
+<li>refer the LCA figure from the right paper </li>
+<li>refer the LCA figure with exact page of one paper</li>
+<li>refer the LCA figure from the value of external database, e.g. Ecoinvent.</li>
+</ul>
+<h2 id="Project-V0-1-Literature-management-only"><a href="#Project-V0-1-Literature-management-only" class="headerlink" title="Project V0.1  Literature management only"></a>Project V0.1  Literature management only</h2><p>Function: Import the old literature from endnote. </p>
+<p>Step 1: Download the endnote file from <a href="scholar.google.com">google scholar</a>, <a href="http://xueshu.baidu.com/" target="_blank" rel="external">baidu xueshu</a><br>Step 2: Import the endnote customized file into application, just Double clicks<br>Step 3: Export the endnote customized XML file from /edit/export<br>Step 4: Microsoft access is used to import XML file from XML, however, XML structure needs to be transformed via <em>XSLT file</em>.<br>Step 5: save the new import data to database file</p>
+<p>Generating  <strong><em>XSLT file</em></strong> for Access customized XML</p>
+<p>Tools:<br><a href="http://xslttest.appspot.com/" target="_blank" rel="external">Testing website</a> : Free Online XSLT Test Tool</p>
+<p>Knowledge:<br>Delete parent tag but keep the value, format and node:<br>My code<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;xsl:template match=&quot;authors&quot;&gt;</div><div class="line">       &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;</div><div class="line">   &lt;/xsl:template&gt;</div></pre></td></tr></table></figure></p>
+<p><a href="http://stackoverflow.com/questions/30029303/how-to-import-xml-with-nested-nodes-parent-child-relationships-into-access" target="_blank" rel="external">How to import XML with nested nodes (parent/child relationships) into Access</a> : using the key need to insert the parent key value (assuming that it is C_NOT in this case) into each child node.<br>My Code:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;xsl:template match=&quot;keyword&quot;&gt;</div><div class="line">        &lt;keyword&gt;</div><div class="line">            &lt;rec-number&gt;&lt;xsl:value-of select=&quot;../../rec-number&quot;/&gt;&lt;/rec-number&gt;</div><div class="line">            &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;</div><div class="line">        &lt;/keyword&gt;</div><div class="line">    &lt;/xsl:template&gt;</div></pre></td></tr></table></figure></p>
+<p><a href="http://stackoverflow.com/questions/23266193/an-attribute-node-cannot-be-created-after-the-children-of-the-containing-element" target="_blank" rel="external">Copy Children value to parent and delete children</a>: need to copy the element before any other<br>My code:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;xsl:template match=&quot;author|title|secondary-title|periodical|pages|volume|number|year|abstract|foreign-keys|isbn|publisher|urls&quot;&gt;</div><div class="line">    &lt;xsl:copy&gt;</div><div class="line">        &lt;xsl:value-of select=&quot;@*|node()&quot;/&gt;</div><div class="line">    &lt;/xsl:copy&gt;</div><div class="line">&lt;/xsl:template&gt;</div></pre></td></tr></table></figure></p>
+<p>List the key information of one literature<br>Access for literature management<br><a href="http://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=1067&amp;context=studentpub" target="_blank" rel="external">ref1</a>       <a href="http://community.thomsonreuters.com/t5/EndNote-Styles-Filters-and/Exporting-references-to-import-into-Access/td-p/46393" target="_blank" rel="external">ref2</a>    <a href="https://www.youtube.com/watch?v=EZi6LAWMraw&amp;list=PLzj7TwUeMQ3jb4HGldAc307RUUCn2lX4F&amp;index=14#t=2.479197" target="_blank" rel="external">ref3</a> <a href="https://support.office.com/en-us/article/Add-records-to-a-table-by-using-an-append-query-71cd4fe3-c2d7-4856-a0c8-a2638ccf4ad0" target="_blank" rel="external">ref4</a></p>
+<p>Transformed by XSLT<br><a href="http://stackoverflow.com/questions/40282157/importing-a-xml-file-in-ms-access" target="_blank" rel="external">ref1</a> <a href="http://stackoverflow.com/questions/1605866/xml-in-ms-access-2007" target="_blank" rel="external">ref2</a> <a href="http://stackoverflow.com/questions/40161237/xslt-xml-element-attributes-appearing-outside-of-element" target="_blank" rel="external">ref3</a> <a href="http://stackoverflow.com/questions/35721323/remove-empty-child-elements-in-xml-using-xslt" target="_blank" rel="external">ref4</a>  <a href="http://stackoverflow.com/questions/321860/how-to-remove-elements-from-xml-using-xslt-with-stylesheet-and-xsltproc" target="_blank" rel="external">ref5</a> <a href="http://stackoverflow.com/questions/12152519/removing-xml-nodes-using-xslt" target="_blank" rel="external">ref6</a> <a href="http://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzasp/rzaspxml4369.htm" target="_blank" rel="external">IBM ref7</a> <a href="http://stackoverflow.com/questions/23266193/an-attribute-node-cannot-be-created-after-the-children-of-the-containing-element" target="_blank" rel="external">ref8</a> <a href="http://stackoverflow.com/questions/1605866/xml-in-ms-access-2007" target="_blank" rel="external">ref9</a> <a href="http://stackoverflow.com/questions/36190910/removing-a-parent-element-in-xml-while-keeping-its-children-using-xslt" target="_blank" rel="external">ref10</a> <a href="http://stackoverflow.com/questions/16529219/xslt-removing-children-from-parent-dynamically" target="_blank" rel="external">ref11</a> <a href="[Remove XML node when child node meets certain requirements](http://stackoverflow.com/questions/3620282/remove-xml-node-when-child-node-meets-certain-requirements">ref12</a>) <a href="http://stackoverflow.com/questions/26835619/importing-xml-into-access-with-an-xsl-transform" target="_blank" rel="external">ref13</a> <a href="http://stackoverflow.com/questions/23829650/xslt-to-change-xml-in-ms-access-import" target="_blank" rel="external">access ref14</a> </p>
+<p>Access required structure </p>
+<ol>
+<li>Value with no child layer <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">2. Nested categories need a key as same as its parents, and to be shown in another table.</div><div class="line"></div><div class="line">Exact the same format, but reload all nodes</div></pre></td></tr></table></figure></li>
+</ol>
+<p><xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><br>    <xsl:output indent="yes"><br>    <xsl:strip-space elements="*"></xsl:strip-space></xsl:output></xsl:stylesheet></p>
+<pre><code>&lt;xsl:template match=&quot;/&quot;&gt;
+    &lt;dataroot&gt;
+        &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;
+    &lt;/dataroot&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match=&quot;@*|node()&quot;&gt;
+    &lt;xsl:copy&gt;
+        &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;
+    &lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Omit the `NOTARIAS`</div></pre></td></tr></table></figure>
+<p> <xsl:template match="NOTARIAS"><br>            <xsl:apply-templates select="@*|node()"><br></xsl:apply-templates></xsl:template><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">Omit the child node</div></pre></td></tr></table></figure></p>
+<style> </style>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">wrong example  ``` </div><div class="line">&lt;xsl:template match=&quot;title/style&quot;/&gt;</div></pre></td></tr></table></figure>
+<p>Adding key <c not=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;xsl:template match=&quot;NOTARIA&quot;&gt;</div><div class="line">       &lt;NOTARIA&gt;</div><div class="line">           &lt;C_NOT&gt;&lt;xsl:value-of select=&quot;../../C_NOT&quot;/&gt;&lt;/C_NOT&gt;</div><div class="line">           &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;</div><div class="line">       &lt;/NOTARIA&gt;</div><div class="line">   &lt;/xsl:template&gt;</div></pre></td></tr></table></figure></c></p>
+<p>append table using query<br><a href="http://www.databasedev.co.uk/append_query.html" target="_blank" rel="external">http://www.databasedev.co.uk/append_query.html</a></p>
+<h2 id="Project-V1-0-Literature-management"><a href="#Project-V1-0-Literature-management" class="headerlink" title="Project V1.0  Literature management"></a>Project V1.0  Literature management</h2><p>Function: import the endnote literature from extent endnote history results.</p>
+<p>Download: <a href="/Publications/XSLT_endnote.xslt">XSLT_endnote.xslt</a></p>
+<p>Example Bib XML exported from Endnote:<a href="/Publications/My20%Endnote20%Library.xml">My EndNote Library.xml</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiangli.co/Projects/database-my-literature/index.html" data-id="ciwncrz9x0007lsuhl71fjd4i" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Academia/">Academia</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BuildingBlog/">BuildingBlog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Collections/">Collections</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Academia/" style="font-size: 10px;">Academia</a> <a href="/tags/BuildingBlog/" style="font-size: 20px;">BuildingBlog</a> <a href="/tags/Collections/" style="font-size: 15px;">Collections</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/12/04/matlab/">Matlab Tips</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/27/programming-method/">programming method</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/25/Academia-causal-job/">Academia causal job 学术圈里的临时工</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/25/Postdoc-and-causal-job-in-academia/">Postdoc and causal job in academia</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/24/landscape-css/">landscape css</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Xiang Li<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/Projects" class="mobile-nav-link">Projects</a>
+  
+    <a href="/Publications" class="mobile-nav-link">Publications</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
